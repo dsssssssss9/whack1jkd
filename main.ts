@@ -1,6 +1,3 @@
-/**
- * Create 12 mole hole positions
- */
 // Function to move mole to a random hole
 function moveMole () {
     posx = molePositions[Random_Number]
@@ -8,10 +5,13 @@ function moveMole () {
     mole.setPosition(posx, posy)
 }
 // Score point when hammer hits mole
-sprites.onOverlap(SpriteKind.Enemy, SpriteKind.Player, function (sprite, otherSprite) {
-    info.changeScoreBy(1)
+sprites.onOverlap(SpriteKind.Player, SpriteKind.Enemy, function (sprite, otherSprite) {
     moveMole()
+    info.changeScoreBy(1)
 })
+/**
+ * Create 12 mole hole positions
+ */
 let Random_Number = 0
 let molePositions: number[] = []
 let y = 0
@@ -62,17 +62,17 @@ for (let row = 0; row <= gridRows - 1; row++) {
     for (let col = 0; col <= gridCols - 1; col++) {
         x = 30 + col * 40
         y = 40 + row * 40
-        molePositions.push(x)
         molePositions.push(y)
+        molePositions.push(x)
     }
 }
 // Setup game
 scene.setBackgroundColor(12)
 info.setScore(0)
 // Mole moves every 0.8 seconds
-game.onUpdateInterval(2000, function () {
+game.onUpdateInterval(800, function () {
     Random_Number = randint(0, molePositions.length - 1)
-    if (Random_Number % 1 == 0) {
+    if (Random_Number % 2 == 0) {
         Random_Number += -1
     }
     moveMole()
