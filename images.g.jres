@@ -1,0 +1,17 @@
+{
+    "image1": {
+        "data": "hwQQABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwAAAAAAAAADADMzMzAwAAAAMDAAAzAAAAAwMAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAwAAAwAAAAAzADADAAAAADAzMwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+        "mimeType": "image/x-mkcd-f4",
+        "displayName": "hammer"
+    },
+    "image2": {
+        "data": "hwQQABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADMzAwAAAAAwIyIyAAAAADAiIjIDAAAAMyIiIgMAAAAzIiIiAwAAADAiIiIDAAAAMCIiMgAAAAAwIyIzAAAAAAAzMwMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+        "mimeType": "image/x-mkcd-f4",
+        "displayName": "mole"
+    },
+    "*": {
+        "mimeType": "image/x-mkcd-f4",
+        "dataEncoding": "base64",
+        "namespace": "myImages"
+    }
+}
